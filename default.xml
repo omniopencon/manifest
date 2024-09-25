@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="origin"
+           fetch="." />
+
+  <default revision="main"
+           remote="origin"
+           sync-j="4" />
+
+  <project name="api_weather" path="workshop/api/weather" />
+  <project name="api_universe" path="workshop/api/universe" />
+  <project name="main" path="workshop/main">
+    <copyfile src="pyproject.toml" dest="pyproject.toml" />
+  </project>
+</manifest>
